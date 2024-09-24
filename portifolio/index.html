@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/JC-final.png" type="image.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>João Carvalho</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<body>
+
+<header>
+    <!-- Início do cabeçalho -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-4 navbar-transparente">
+        <div class="container">
+            <!-- Logo -->
+            <h2 style="color: #f5f5f5;">João Carvalho</h2>
+
+            <!-- Botão de 'hambúrguer' para telas pequenas -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal" aria-controls="nav-principal" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#description" class="nav-link font-size-lg mr-3">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link font-size-lg mr-3">Resumo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link font-size-lg mr-3">Contato</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Final do cabeçalho -->
+
+<section id="home" class="d-flex">
+    <div class="container align-self-center">
+        <div class="row">
+            <div class="col-md-12 capa">
+                <h1 id="titulo">Seja bem-vindo!</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Array com as frases
+const frases = [
+    "Seja bem-vindo!",
+    "Explore meu portfólio!",
+    "Transforme suas ideias em realidade!",
+    "Desenvolvendo soluções criativas!",
+    "Vamos construir algo incrível juntos!"
+];
+
+// Função para mudar a frase
+function mudarFrase() {
+    const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+    document.getElementById("titulo").innerText = fraseAleatoria;
+}
+
+// Chamar a função para mudar a frase ao carregar a página
+mudarFrase();
+
+// Se desejar, você pode mudar a frase em intervalos regulares
+setInterval(mudarFrase, 2000); // Troca a frase a cada 3 segundos
+</script>
+
+
+<section id="description">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/foto1.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2>Sobre mim</h2>
+                <p>
+                    Olá! Meu nome é João Carvalho e sou desenvolvedor web apaixonado por criar experiências digitais impactantes. Com experiência em tecnologias como Bootstrap, HTML, CSS e PHP, tenho trabalhado em diversos projetos que vão desde sites pessoais até aplicações web complexas.
+
+                    Minha jornada na programação começou há alguns anos, quando me encantei pelo potencial que a tecnologia tem de transformar ideias em realidade. Desde então, venho me dedicando a aprimorar minhas habilidades e aprender novas ferramentas que me permitam entregar soluções inovadoras e eficientes.
+                    
+                    Acredito que a chave para um bom desenvolvimento é entender as necessidades do cliente e traduzir isso em um design funcional e atraente. Estou sempre em busca de desafios que me permitam crescer e expandir meus conhecimentos na área.
+                    
+                    Se você está procurando um profissional comprometido e criativo, ficarei feliz em colaborar em novos projetos. Vamos nos conectar e transformar suas ideias em um produto incrível!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="info">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    Vamos Trabalhar Juntos!</h2>
+                <p>
+                    Se você está em busca de um desenvolvedor web dedicado e criativo, você está no lugar certo! Estou aqui para ajudar a transformar suas ideias em realidade, utilizando as melhores práticas e tecnologias do mercado, como Bootstrap, HTML, CSS e PHP.
+
+                    Meu compromisso é fornecer soluções personalizadas que atendam às suas necessidades e superem suas expectativas. Não importa o tamanho do projeto, cada desafio é uma oportunidade para criar algo incrível!
+                    
+                    Entre em contato comigo hoje mesmo! Vamos conversar sobre como posso ajudar a levar seu projeto para o próximo nível. Estou ansioso para colaborar com você e construir algo extraordinário juntos!                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Entre em contato</h2>
+                <p>
+                    Estou sempre disponível para novas conversas e colaborações! Aqui estão algumas maneiras de nos conectarmos:
+                    <br>
+                    <strong>WhatsApp:</strong> Para uma resposta rápida, envie uma mensagem diretamente para mim. Clique <a href="https://wa.me/17981748394" target="_blank">aqui</a> e vamos conversar!
+                    <hr>
+                    <strong>LinkedIn:</strong> Quer saber mais sobre meu trabalho e projetos? Conecte-se comigo no LinkedIn e acompanhe minha jornada profissional. Clique <a href="https://www.linkedin.com/in/joaomarcelocarvalho.com/in/seuperfil" target="_blank">aqui</a>!
+                    <hr>
+                    <strong>Instagram:</strong> Estou sempre compartilhando meus projetos e novidades por lá! Siga-me no Instagram e fique por dentro. Clique <a href="https://www.instagram.com/joaum.carvalho" target="_blank">aqui</a> para seguir!
+                    <hr>
+                    <strong>E-mail:</strong> Se você preferir um contato mais detalhado, fique à vontade para me enviar um e-mail. Estou à disposição para discutir suas ideias e projetos. Você pode me contatar <a href="mailto:joaom.nogcarvalho@gmail.com">clicando aqui</a>.
+                    <hr>
+                    Estou ansioso para ouvir de você! Vamos juntos transformar suas ideias em realidade!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+    <!-- jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
